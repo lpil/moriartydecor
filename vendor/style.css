@@ -32798,7 +32798,6 @@ textarea.wp-editor-area {
 
 @media (max-width: 959px) {
   .footer_wrap .vc_row-o-equal-height .textwidget {
-    max-height: 5.3em;
     overflow: hidden;
   }
 
@@ -33008,10 +33007,6 @@ textarea.wp-editor-area {
 
   body.no_layout.menu_style_right .sc_layouts_row_fixed_on {
     padding-right: 0;
-  }
-
-  .top_panel {
-    margin-bottom: 6rem;
   }
 
   .footer_wrap {
@@ -36258,4 +36253,9 @@ textarea.wp-editor-area {
 
 .vc_custom_1493719721616 {
   background-color: #1e3236 !important;
+}
+
+footer .widgettitle,
+footer .widget {
+  margin-top: 0;
 }
