@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" class="no-js scheme_default">
+<html lang="en">
 
 <head>
    <meta charset="UTF-8">
@@ -8,12 +8,8 @@
    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 
    <!-- Fonts -->
-   <link property="stylesheet" rel='stylesheet' id='prorange-font-google_fonts-css' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700%2C600%7CLibre+Baskerville%3A400%2C400italic%2C700&#038;subset=latin%2Clatin-ext&#038;ver=4.9.7' type='text/css' media='all' />
-   <link property="stylesheet" rel='stylesheet' id='tp-open-sans-css' href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=4.9.7' type='text/css' media='all' />
-   <link property="stylesheet" rel='stylesheet' id='tp-raleway-css' href='http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.7' type='text/css' media='all' />
-   <link property="stylesheet" rel='stylesheet' id='tp-droid-serif-css' href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&#038;ver=4.9.7' type='text/css' media='all' />
-   <link property="stylesheet" rel='stylesheet' id='trx_addons-css' href='http://prorange.ancorathemes.com/wp-content/plugins/trx_addons/css/trx_addons.css' type='text/css' media='all' />
-   <link property="stylesheet" rel='stylesheet' id='prorange-fontello-css' href='http://prorange.ancorathemes.com/wp-content/themes/prorange/css/fontello/css/fontello-embedded.css?ver=4.9.7' type='text/css' media='all' />
+   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700%2C600%7CLibre+Baskerville%3A400%2C400italic%2C700&#038;subset=latin%2Clatin-ext&#038;ver=4.9.7' type='text/css' media='all' />
+   <link rel='stylesheet' href='vendor/fontello-embedded.css' type='text/css' media='all' />
 
 
    <link rel='stylesheet' href='{{ site.baseurl }}/vendor/style.css' type='text/css' media='all' />
@@ -49,10 +45,14 @@
                                  <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
                                        <div class="sc_layouts_item sc_layouts_hide_on_mobile sc_layouts_hide_on_tablet">
-                                          <div id="sc_layouts_iconed_text_2437177" class="sc_layouts_iconed_text hide_on_tablet hide_on_mobile"><span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-untitled-1"></span><span class="sc_layouts_item_details sc_layouts_iconed_text_details"><span class="sc_layouts_item_details_line1 sc_layouts_iconed_text_line1">800 123 4567</span></span>
-                                             <!-- /.sc_layouts_iconed_text_details -->
+                                          <div id="sc_layouts_iconed_text_2437177" class="sc_layouts_iconed_text hide_on_tablet hide_on_mobile">
+                                             <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-untitled-1"></span>
+                                             <span class="sc_layouts_item_details sc_layouts_iconed_text_details">
+                                                <span class="sc_layouts_item_details_line1 sc_layouts_iconed_text_line1">
+                                                   <a href="tel:{{ site.phone | replace: ' ' '' }}">{{ site.phone }}</a>
+                                                </span>
+                                             </span>
                                           </div>
-                                          <!-- /.sc_layouts_iconed_text -->
                                        </div>
                                     </div>
                                  </div>
@@ -333,7 +333,7 @@
                                           <div class="wpb_wrapper">
                                              <div class="sc_layouts_item">
                                                 <div id="sc_title_539453659" class="sc_title sc_title_default">
-                                                   <h2 class="sc_item_title sc_title_title sc_align_center sc_item_title_style_default sc_item_title_tag">Our work</h2>
+                                                   <h2 class="sc_item_title sc_title_title sc_align_center sc_item_title_style_default sc_item_title_tag">My work</h2>
                                                 </div>
                                              </div>
                                              <div class="vc_empty_space  height_small" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
@@ -603,7 +603,7 @@
       </div>
 
       <footer class="footer_wrap footer_custom footer_custom_16 footer_custom_prorange-footer scheme_dark">
-         <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1493725048573 vc_row-has-fill sc_layouts_row sc_layouts_row_type_normal scheme_dark">
+         <div class="vc_row wpb_row vc_row-fluid vc_custom_1493725048573 vc_row-has-fill sc_layouts_row sc_layouts_row_type_normal scheme_dark">
             <div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
                <div class="vc_column-inner ">
                   <div class="wpb_wrapper">
@@ -617,7 +617,12 @@
                                           <div class="widget widget_text">
                                              <h2 class="widgettitle">Contact Us</h2>
                                              <div class="textwidget">
-                                                <p>Tel. 800 123 4567<br /> E-mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f0999e969fb0899f8583998495de939f9d">[email&#160;protected]</a><br /> 6192 New Jersey</p>
+                                                <div>
+                                                   Tel. <a href="tel:{{ site.phone | replace: ' ' '' }}">{{ site.phone }}</a>
+                                                </div>
+                                                <div>
+                                                   E-mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                                                </div>
                                              </div>
                                           </div>
                                        </div>
@@ -635,7 +640,7 @@
                                                    <div class="contacts_logo"><img src="http://prorange.ancorathemes.com/wp-content/uploads/2017/03/logo-4.png" alt="" width="419" height="106"></div>
                                                    <div class="contacts_description">
                                                       <p>
-                                                      Excellent customer service and professional workmanship at a competitive price
+                                                         Excellent customer service and professional workmanship at a competitive price
                                                       </p>
                                                    </div>
                                                    <div class="contacts_socials socials_wrap">
@@ -674,7 +679,6 @@
                            </div>
                         </div>
                      </div>
-                     <!-- /.sc_content -->
                   </div>
                </div>
             </div>
@@ -684,8 +688,6 @@
    </div>
    </div>
 
-
-   <link property="stylesheet" rel='stylesheet' id='font-awesome-css' href='http://prorange.ancorathemes.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.4.5' type='text/css' media='all' />
    <script type='text/javascript' src='http://prorange.ancorathemes.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.4.5'></script>
    <script type='text/javascript' src='http://prorange.ancorathemes.com/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.essential.min.js?ver=2.1.0.2'></script>
 </body>
