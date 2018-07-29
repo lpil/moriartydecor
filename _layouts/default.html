@@ -49,7 +49,7 @@
                                              <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-untitled-1"></span>
                                              <span class="sc_layouts_item_details sc_layouts_iconed_text_details">
                                                 <span class="sc_layouts_item_details_line1 sc_layouts_iconed_text_line1">
-                                                   <a href="tel:{{ site.phone | replace: ' ' '' }}">{{ site.phone }}</a>
+                                                   <a href="tel:{{ site.phone | remove: ' ' }}">{{ site.phone }}</a>
                                                 </span>
                                              </span>
                                           </div>
@@ -618,7 +618,7 @@
                                              <h2 class="widgettitle">Contact Us</h2>
                                              <div class="textwidget">
                                                 <div>
-                                                   Tel. <a href="tel:{{ site.phone | replace: ' ' '' }}">{{ site.phone }}</a>
+                                                   Tel. <a href="tel:{{ site.phone | remove: ' ' }}">{{ site.phone }}</a>
                                                 </div>
                                                 <div>
                                                    E-mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
