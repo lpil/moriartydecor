@@ -2830,7 +2830,7 @@ body.error404 .sc_layouts_hide_on_frontpage {
     width: auto;
   }
   .sc_layouts_row_type_compact .sc_layouts_logo img {
-    max-height: 40px;
+    max-height: 58px;
   }
   .sc_layouts_row_type_narrow .sc_layouts_logo img {
     max-height: 30px;
@@ -35785,10 +35785,7 @@ textarea.wp-editor-area {
 }
 
 .vc_custom_1493718643021 {
-  padding-top: 1.18rem !important;
-  padding-right: 2.7em !important;
-  padding-bottom: 1.7rem !important;
-  padding-left: 2.8em !important;
+  padding: 5px 2.7em !important;
 }
 
 .vc_custom_1494231580857 {
